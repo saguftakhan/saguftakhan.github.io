@@ -17,7 +17,7 @@ p {
     font-size: 12pt;
   }
 h3 {
-    color: rgb(45, 44, 44);
+    color: darkslategray;
 }
 h3 {
     font-size: 20pt;
@@ -27,10 +27,10 @@ h4 {
     font-size: 12pt;
 }
 h4 {
-    color: rgb(52, 36, 36);
+    color: darkolivegreen;
 }
 p, ul, ol {
-    color: rgb(97, 68, 47)
+    color: brown;
 }
 body{ 
     background-color: rgb(228, 228, 213);

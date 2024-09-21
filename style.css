@@ -11,7 +11,7 @@ h2 {
     color: darkred;
 }
 h2 {
-    font-size: 30pt;
+    font-size: 26pt;
 }
 p {
     font-size: 12pt;
@@ -23,9 +23,9 @@ h3 {
 h4 {
     font-size: 12pt;
 }
-nav {
+#unique {
     background-color: lightgrey;
-    padding: 1%;
+    padding: 3%;
 }
 p {
     margin: 15pt;

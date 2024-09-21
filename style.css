@@ -17,16 +17,43 @@ p {
     font-size: 12pt;
   }
 h3 {
+    color: rgb(45, 44, 44);
+}
+h3 {
     font-size: 20pt;
 }
   
 h4 {
     font-size: 12pt;
 }
+h4 {
+    color: rgb(52, 36, 36);
+}
+p {
+    color: rgb(97, 68, 47)
+}
 body{ 
-    background-color: beige;
+    background-color: rgb(228, 228, 213);
     padding: 3%;
 }
 p {
     margin: 15pt;
+}
+/* unvisited link */
+a:link {
+    color: darkgreen;
+}
+  
+/* visited link */
+  a:visited {
+    color: darkslateblue;
+}
+/* mouse over link */
+a:hover {
+    color: darkviolet;
+}
+  
+  /* selected link */
+  a:active {
+    color: darkgoldenrod;
 }

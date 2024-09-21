@@ -1,4 +1,4 @@
-h2, h3, h4, p {
+h2, h3, h4, p, ul, ol {
     font-family: Arial, sans-serif;
 }
 h1{
@@ -29,7 +29,7 @@ h4 {
 h4 {
     color: rgb(52, 36, 36);
 }
-p {
+p, ul, ol {
     color: rgb(97, 68, 47)
 }
 body{ 

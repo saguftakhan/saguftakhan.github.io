@@ -32,6 +32,9 @@ h4 {
 p, ul, ol {
     color: brown;
 }
+table { 
+    color: brown;
+}
 body{ 
     background-color: rgb(228, 228, 213);
     padding: 3%;

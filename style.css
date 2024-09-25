@@ -16,8 +16,8 @@ h2 {
 h2 {
     font-size: 26pt;
 }
-p {
-    font-size: 12pt;
+p, td, th {
+    font-size: 14pt;
   }
 h3 {
     color: darkslategray;

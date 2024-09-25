@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-h2, h3, h4, p, ul, ol {
+h2, h3, h4, p, ul, ol, td, th {
     font-family: Arial, sans-serif;
 }
 h1{

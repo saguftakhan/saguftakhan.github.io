@@ -6,20 +6,20 @@ if (person != null) {
 }
 
 
-
-
-
-
-
 let menuItems = document.querySelectorAll('nav a');
 
-// Add event listeners for mouseover and mouseout
+
 menuItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.color = 'blue'; // Change color on hover (mouseover)
+        item.style.color = 'blue'; 
 });
 
     item.addEventListener('mouseout', () => {
-        item.style.color = 'black'; // Revert back to original color (mouseout)
+        item.style.color = 'black'; 
 });
 });
+
+
+
+
+

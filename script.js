@@ -1,4 +1,4 @@
-let person = prompt("Please enter your name", "Angelina Jolie");
+let person = prompt("Please enter your name", "Your Name");
 
 if (person != null) {
     document.getElementById("demo").innerHTML =
@@ -11,11 +11,15 @@ if (person != null) {
 
 
 
-function mOver(some_tag) {
-    some_tag.innerHTML = "Thank You";
-     some_tag.style.color = "brown";
-}
-  function mOut(some_tag) {
-     some_tag.innerHTML = "Mouse Over Me";
-     some_tag.style.color = "red";
-}
+let menuItems = document.querySelectorAll('nav a');
+
+// Add event listeners for mouseover and mouseout
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.color = 'blue'; // Change color on hover (mouseover)
+});
+
+    item.addEventListener('mouseout', () => {
+        item.style.color = 'black'; // Revert back to original color (mouseout)
+});
+});

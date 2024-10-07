@@ -1,3 +1,4 @@
+// Prompt to type in name
 let person = prompt("Please enter your name", "Your Name");
 
 if (person != null) {
@@ -5,7 +6,7 @@ if (person != null) {
     "Hello " + person + "! How are you today?";
 }
 
-
+// Mouseover and Mouseout for nav items
 let menuItems = document.querySelectorAll('nav a');
 
 
@@ -19,7 +20,7 @@ menuItems.forEach(item => {
 });
 });
 
-/* When the user clicks on the button,
+// When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -38,6 +39,7 @@ window.onclick = function(event) {
 }
 }
 
+// Insert image
 var img = document.createElement("img"); 
  
 img.src = "IMG_0364.jpg"; 

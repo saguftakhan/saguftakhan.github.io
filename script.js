@@ -6,35 +6,31 @@ if (person != null) {
     "Hello " + person + "! How are you today?";
 }
 
-// Mouseover and Mouseout for nav items
-let menuItems = document.querySelectorAll('nav a');
-
-
+// Mouseover and Mouseout for menu items
+let menuItems = document.querySelectorAll('.navbar a');
 menuItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.color = 'blue'; 
-});
+        item.style.color = 'green'; 
+    });
 
     item.addEventListener('mouseout', () => {
-        item.style.color = 'black'; 
-});
+        item.style.color = 'white'; 
+    });
 });
 
-// When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+
+
+// When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-    openDropdown.classList.remove('show');
-}
+  
+// Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
 }
 }
 }
@@ -50,7 +46,7 @@ img.style.height = "350px";
 var src =document.getElementById("x")
 src.appendChild(img);
 
-// Function to enlarge the image when clicked
+// Enlarge the image when clicked
 img.onclick = function() {
     if (img.style.width === "350px") {
         img.style.width = "600px";  // Enlarged size

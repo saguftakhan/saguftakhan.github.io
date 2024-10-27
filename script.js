@@ -1,4 +1,4 @@
-// Prompt to type in name
+//  Prompt to type in name 
 let person = prompt("Please enter your name", "Your Name");
 
 if (person != null) {
@@ -6,7 +6,7 @@ if (person != null) {
     "Hello " + person + "! How are you today?";
 }
 
-// Mouseover and Mouseout for menu items
+// Mouseover and Mouseout for menu items 
 let menuItems = document.querySelectorAll('.navbar a');
 menuItems.forEach(item => {
     item.addEventListener('mouseover', () => {
@@ -20,7 +20,7 @@ menuItems.forEach(item => {
 
 
 
-// When the user clicks on the button, toggle between hiding and showing the dropdown content 
+// When the user clicks on the button, toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }

@@ -3,6 +3,7 @@
     padding: 0;
 }
 .container{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -42,7 +43,6 @@
     cursor: poitner;  
 }
 nav{
-    flex: 1;
     padding-left: 60px;
 
 }

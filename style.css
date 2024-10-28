@@ -48,9 +48,53 @@ body{
     background-color: rgb(255, 255, 255);
     padding: 3%;
 }
-/* Background image for entire page */
+/* background styling */
 body {
-    background-image: url('background image.jpg');
+    background: url("background-image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* nav bar styling */
+.navbar {
+    width: 100%
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+}
+/* adjusting logo size */
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+/* putting nav in the center */
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    position: relative;
+}
+.dropdown .dropbtn{
+    background: none; /* Removes default button styling */
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 /* Paragraph-specific styling */
 p {
@@ -60,7 +104,6 @@ p {
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
     font-family: Arial;
 }
   

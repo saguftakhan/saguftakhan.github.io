@@ -10,12 +10,20 @@ if (person != null) {
 let menuItems = document.querySelectorAll('.navbar a');
 menuItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.color = 'green'; 
+        item.style.color = 'darkblue'; 
     });
 
     item.addEventListener('mouseout', () => {
         item.style.color = 'white'; 
     });
+});
+
+let dropdownButton = document.querySelector('.dropbtn');
+dropdownButton.addEventListener('mouseover', () => {
+    dropdownButton.style.color = 'darkblue'; 
+});
+dropdownButton.addEventListener('mouseout', () => {
+    dropdownButton.style.color = 'white'; 
 });
 
 

@@ -1,60 +1,42 @@
 @charset "utf-8";
-/* CSS Document */
-
 /* General font styling for headings and text elements */
 h2, h3, h4, p, ul, ol, td, th {
     font-family: Arial, sans-serif;
 }
 /* Styling for the primary heading (h1) */
-h1{
-    color:darkblue;
-}
 h1 {
+    color: darkblue;
     font-size: 40pt;
 }
 /* Styling for the secondary heading (h2) */
 h2 {
     color: darkred;
-}
-h2 {
     font-size: 26pt;
 }
 /* Styling for paragraph text, table data (td), table header (th), unordered list (ul), and ordered list (ol) */
 p, td, th, ul, ol {
     font-size: 12pt;
+    color: brown;
 }
 /* Styling for heading (h3) */
 h3 {
     color: darkslategray;
-}
-h3 {
     font-size: 20pt;
 }
 /* Styling for heading (h4) */
 h4 {
     font-size: 16pt;
-}
-h4 {
     color: darkolivegreen;
 }
-p, ul, ol {
-    color: brown;
-}
-td {
-   color: brown;
-}
 /* Body styling */
-body{ 
-    background-color: rgb(255, 255, 255);
-    padding: 3%;
-}
-/* background styling */
-body {
+body { 
     background: url("background-image.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
+    padding: 3%;
 }
+/* Container styling */
 .container {
     height: 100vh;
     width: 100%;
@@ -63,50 +45,29 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-
-/* nav bar styling */
+/* Navbar styling */
 .navbar {
-    width: 100%
+    width: 100%;
     height: 15vh;
-    margin: auto;
     display: flex;
     align-items: center;
     font-family: Arial, sans-serif; 
 }
-/* adjusting logo size */
-.logo{
+/* Adjusting logo size */
+.logo {
     width: 100px;
     cursor: pointer;
 }
-/* putting nav in the center */
+/* Navbar links */
 nav ul {
     padding: 0;
     margin: 0;
 }
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0px 20px;
-    position: relative;
 }
-.dropdown .dropbtn{
-    background: none; /* Removes default button styling */
-    color: white;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-/* Paragraph-specific styling */
-p {
-    margin: 15pt;
-}
-
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    font-family: Arial;
-}
-  
 /* Links inside the navbar */
 .navbar a {
     float: right;
@@ -116,35 +77,26 @@ p {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-/* The dropdown container */
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-  
-/* Dropdown button */
-.dropdown .dropbtn {
+/* Dropdown button styling */
+.dropbtn {
     font-size: 30px;
-    border: none;
-    outline: none;
     color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
-    margin: 0; 
+    background: none; /* Ensures consistency with other links */
+    border: none;
+    text-align: center;
+    padding: 14 px 16px; /* Matches the padding of other navbar items */
+    cursor: pointer;
+
 }
-  
-/* Dropdown content (hidden by default) */
-  .dropdown-content {
+/* Dropdown content styling */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: grey;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-  
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -154,13 +106,15 @@ p {
     display: block;
     text-align: left;
 }
-  
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: grey;
-}
-  
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+nav ul li {
+    height: 58px; /* Adjust this to match the height of other navbar items */
+    line-height: 58px; /* Aligns text vertically within the height */
+}
+.dropdown {
+    height: 64px; /* Adjust this to match the height of other navbar items */
+    line-height: 64px; /* Aligns text vertically within the height */
 }

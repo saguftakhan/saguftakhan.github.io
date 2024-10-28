@@ -1,32 +1,29 @@
 @charset "utf-8";
-/* General font styling for headings and text elements */
-h2, h3, h4, p, ul, ol, td, th {
-    font-family: Arial, sans-serif;
-}
-/* Styling for the primary heading (h1) */
-h1 {
+/* Detail section styling */
+.content, h1 {
+    font-size: 50pt;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
     color: darkblue;
-    font-size: 40pt;
 }
-/* Styling for the secondary heading (h2) */
-h2 {
-    color: darkred;
-    font-size: 26pt;
-}
-/* Styling for paragraph text, table data (td), table header (th), unordered list (ul), and ordered list (ol) */
-p, td, th, ul, ol {
-    font-size: 12pt;
-    color: brown;
-}
-/* Styling for heading (h3) */
-h3 {
-    color: darkslategray;
+.content, p {
     font-size: 20pt;
+    color: black;
 }
-/* Styling for heading (h4) */
-h4 {
-    font-size: 16pt;
-    color: darkolivegreen;
+.content {
+    margin-left: 10%;
+    margin-top: 10%
+}
+.content .hire-me-button{
+    display: inline-block;
+    background: linear-gradient(45deg,rgb(26, 34, 66), rgb(174, 174, 174));
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: dark blue; 
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
 }
 /* Body styling */
 body { 
@@ -35,13 +32,13 @@ body {
     margin: 0;
     padding: 0;
     padding: 3%;
+    font-family: Arial, sans-serif;
 }
 /* Container styling */
 .container {
     height: 100vh;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
     box-sizing: border-box;
     position: relative;
 }
@@ -71,16 +68,16 @@ nav ul li {
 /* Links inside the navbar */     
 .navbar a {
     float: right;
-    font-size: 30px;
-    color: white;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 /* Dropdown button styling */
 .dropbtn {
-    font-size: 30px;
-    color: white;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
     background: none; /* Ensures consistency with other links */
     border: none;
     text-align: center;
@@ -115,6 +112,6 @@ nav ul li {
     line-height: 58px; /* Aligns text vertically within the height */
 }
 .dropdown {
-    height: 64px; /* Adjust this to match the height of other navbar items */
-    line-height: 64px; /* Aligns text vertically within the height */
+    height: 68px; /* Adjust this to match the height of other navbar items */
+    line-height: 68px; /* Aligns text vertically within the height */
 }

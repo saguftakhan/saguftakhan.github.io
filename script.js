@@ -14,7 +14,7 @@ menuItems.forEach(item => {
     });
 
     item.addEventListener('mouseout', () => {
-        item.style.color = 'white'; 
+        item.style.color = 'black'; 
     });
 });
 
@@ -23,7 +23,7 @@ dropdownButton.addEventListener('mouseover', () => {
     dropdownButton.style.color = 'darkblue'; 
 });
 dropdownButton.addEventListener('mouseout', () => {
-    dropdownButton.style.color = 'white'; 
+    dropdownButton.style.color = 'black'; 
 });
 
 
@@ -48,24 +48,3 @@ window.onclick = function(event) {
 }
 
 
-// Insert image
-var img = document.createElement("img"); 
- 
-img.src = "IMG_0364.jpg"; 
-var src = document.getElementById("x"); 
-img.style.width = "350px";
-img.style.height = "350px"; 
- 
-var src =document.getElementById("x")
-src.appendChild(img);
-
-// Enlarge the image when clicked
-img.onclick = function() {
-    if (img.style.width === "350px") {
-        img.style.width = "600px";  // Enlarged size
-        img.style.height = "600px"; // Enlarged size
-    } else {
-        img.style.width = "350px";  // Default size when clicked again
-        img.style.height = "350px"; 
-    }
-};

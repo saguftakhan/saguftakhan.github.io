@@ -1,1 +1,93 @@
-<h1> Contact</h1>
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Contact Me </h1>
+<!-- button -->
+
+<button type="button" onclick="alert('If you would like to get in touch, please fill out form below')">Get in Touch!</button><br><br>
+
+<!-- field set element, label, and legend element -->
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Personal Details:</legend><br>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" ><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone"><br><br>
+    </fieldset><br>
+
+<!-- single text field and label element -->
+<p>Company Name (optional)</p>
+
+<form action="/action_page.php">
+  <label for="company">Enter Your Company name (or a '!'): </label>
+  <input type="text" id="company" name="company"><br><br>
+
+<!-- radio button -->
+<form action="/action_page.php">
+<p>Preferred Contact Method:</p>
+  <input type="radio" id="email" name="contact_method" value="Email">
+  <label for="email">Email</label><br>
+  <input type="radio" id="phone" name="contact_method" value="Phone">
+  <label for="phone">Phone</label><br>
+  <input type="radio" id="text" name="contact_method" value="Text">
+  <label for="text">Text Message</label> <br> <br> <br>
+
+
+
+<!-- select  -->
+  <form action="/action_page.php">
+    <label for="reason">Reason for Contact:</label>
+    <select id="reason" name="reason">
+      <option value="project_inquiry">Project inquiry</option>
+      <option value="collaboration">Collaboration</option>
+      <option value="job_opportunity">Job Opportunity</option>
+      <option value="questions">Question or Support</option> <br> <br> <br>
+    </select>
+
+<!-- text area -->
+    <p>Your Message:</p>
+
+<form action="/action_page.php">
+  <textarea name="message" id="message" rows="10" cols="30">"Enter your message here..."</textarea> <br> <br> 
+
+<!-- datalist element -->
+    <p>Choose your industry:</p>
+
+    <form action="/action_page.php">
+      <input list="industry" name="industry">
+      <datalist id="industry">
+        <option value="Technology">
+        <option value="Finance">
+        <option value="Healthcare">
+        <option value="Education">
+        <option value="Retail">
+      </datalist> <br> <br>
+
+<!-- checkboxes and label element -->
+      <p>Skills You're Looking For:</p>
+
+      <form action="/action_page.php">
+        <input type="checkbox" id="web_dev" name="skills" value="Web Development">
+        <label for="web_dev"> Web Development</label><br>
+        <input type="checkbox" id="graphic_design" name="skills" value="Graphic Design">
+        <label for="graphic_design">Graphic Design</label><br>
+        <input type="checkbox" id="content_writing" name="skills" value="Content Writing">
+        <label for="content_writing">Content Writing</label><br>
+        <input type="checkbox" id="project_management" name="skills" value="Project Management">
+        <label for="project_management"> Project Management</label><br><br>
+
+
+          <br><br>
+                 
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit"><br><br>
+</form>
+
+<script src="formStorage.js"></script>
+</body>
+</html>

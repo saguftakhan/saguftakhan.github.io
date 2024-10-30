@@ -7,7 +7,7 @@
 <button type="button" onclick="alert('If you would like to get in touch, please fill out form below')">Get in Touch!</button><br><br>
 
 <!-- field set element, label, and legend element -->
-<form action="">
+<form id="myform">
     <fieldset>
       <legend>Personal Details:</legend><br>
       <label for="fname">First name:</label><br>
@@ -23,12 +23,12 @@
 <!-- single text field and label element -->
 <p>Company Name (optional)</p>
 
-<form action="/action_page.php">
+<form id="myform">
   <label for="company">Enter Your Company name (or a '!'): </label>
   <input type="text" id="company" name="company"><br><br>
 
 <!-- radio button -->
-<form action="/action_page.php">
+<form id="myform">
 <p>Preferred Contact Method:</p>
   <input type="radio" id="email" name="contact_method" value="Email">
   <label for="email">Email</label><br>
@@ -40,7 +40,7 @@
 
 
 <!-- select  -->
-  <form action="/action_page.php">
+<form id="myform">
     <label for="reason">Reason for Contact:</label>
     <select id="reason" name="reason">
       <option value="project_inquiry">Project inquiry</option>
@@ -52,13 +52,13 @@
 <!-- text area -->
     <p>Your Message:</p>
 
-<form action="/action_page.php">
+    <form id="myform">
   <textarea name="message" id="message" rows="10" cols="30">"Enter your message here..."</textarea> <br> <br> 
 
 <!-- datalist element -->
     <p>Choose your industry:</p>
 
-    <form action="/action_page.php">
+    <form id="myform">
       <input list="industry" name="industry">
       <datalist id="industry">
         <option value="Technology">
@@ -71,7 +71,7 @@
 <!-- checkboxes and label element -->
       <p>Skills You're Looking For:</p>
 
-      <form action="/action_page.php">
+      <form id="myform">
         <input type="checkbox" id="web_dev" name="skills" value="Web Development">
         <label for="web_dev"> Web Development</label><br>
         <input type="checkbox" id="graphic_design" name="skills" value="Graphic Design">

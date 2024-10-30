@@ -28,27 +28,25 @@
 
 <!-- radio button -->
 <p>Preferred Contact Method:</p>
-  <input type="radio" id="email" name="contact_method" value="Email">
-  <label for="email">Email</label><br>
-  <input type="radio" id="phone" name="contact_method" value="Phone">
-  <label for="phone">Phone</label><br>
-  <input type="radio" id="text" name="contact_method" value="Text">
-  <label for="text">Text Message</label> <br> <br> <br>
+  <input type="radio" id="contact_email" name="contact_method" value="Email">
+  <label for="contact_email">Email</label><br>
+  <input type="radio" id="contact_phone" name="contact_method" value="Phone">
+  <label for="contact_phone">Phone</label><br>
+  <input type="radio" id="contact_text" name="contact_method" value="Text">
+  <label for="contact_text">Text Message</label> <br> <br> <br>
 
-
-
-<!-- select  -->
+<!-- select -->
     <label for="reason">Reason for Contact:</label>
     <select id="reason" name="reason">
       <option value="project_inquiry">Project inquiry</option>
       <option value="collaboration">Collaboration</option>
       <option value="job_opportunity">Job Opportunity</option>
-      <option value="questions">Question or Support</option> <br> <br> <br>
-    </select>
+      <option value="questions">Question or Support</option>
+    </select><br><br>
 
 <!-- text area -->
     <p>Your Message:</p>
-  <textarea name="message" id="message" rows="10" cols="30">"Enter your message here..."</textarea> <br> <br> 
+  <textarea name="message" id="message" rows="10" cols="30">Enter your message here...</textarea> <br> <br> 
 
 <!-- datalist element -->
     <p>Choose your industry:</p>
@@ -72,13 +70,11 @@
         <input type="checkbox" id="project_management" name="skills" value="Project Management">
         <label for="project_management"> Project Management</label><br><br>
 
-
           <br><br>
                  
           <input type="reset" value="Reset">
           <input type="submit" value="Submit"><br><br>
 </form>
-
 
 <script src="formStorage.js"></script>
 </body>

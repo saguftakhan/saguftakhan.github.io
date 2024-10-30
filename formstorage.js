@@ -19,6 +19,15 @@ window.onload = function () {
     message.value = localStorage.getItem("message") || "Enter your message here...";
     industry.value = localStorage.getItem("industry") || "Technology";
 
+    // Load skills checkboxes
+    const skills = JSON.parse(localStorage.getItem("skills") || "[]");
+    skills.forEach(skill => {
+        const skillCheckbox = document.getElementById(skill);
+        if (skillCheckbox) {
+            skillCheckbox.checked = true;
+        }
+    });
+
     // Store values on form submission
     document.getElementById("myform").onsubmit = function () {
         localStorage.setItem("fname", fname.value);
@@ -30,6 +39,13 @@ window.onload = function () {
         localStorage.setItem("message", message.value);
         localStorage.setItem("industry", industry.value);
 
-        alert("Your answers have been submitted!");
+        // Store selected skills
+        const selectedSkills = [];
+        document.querySelectorAll("input[name='skills']:checked").forEach(skill => {
+            selectedSkills.push(skill.id);
+        });
+        localStorage.setItem("skills", JSON.stringify(selectedSkills));
+
+        alert("Form data saved!");
     };
 };

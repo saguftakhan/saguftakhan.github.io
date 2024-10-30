@@ -23,12 +23,10 @@
 <!-- single text field and label element -->
 <p>Company Name (optional)</p>
 
-<form id="myform">
   <label for="company">Enter Your Company name (or a '!'): </label>
   <input type="text" id="company" name="company"><br><br>
 
 <!-- radio button -->
-<form id="myform">
 <p>Preferred Contact Method:</p>
   <input type="radio" id="email" name="contact_method" value="Email">
   <label for="email">Email</label><br>
@@ -40,7 +38,6 @@
 
 
 <!-- select  -->
-<form id="myform">
     <label for="reason">Reason for Contact:</label>
     <select id="reason" name="reason">
       <option value="project_inquiry">Project inquiry</option>
@@ -51,14 +48,10 @@
 
 <!-- text area -->
     <p>Your Message:</p>
-
-    <form id="myform">
   <textarea name="message" id="message" rows="10" cols="30">"Enter your message here..."</textarea> <br> <br> 
 
 <!-- datalist element -->
     <p>Choose your industry:</p>
-
-    <form id="myform">
       <input list="industry" name="industry">
       <datalist id="industry">
         <option value="Technology">
@@ -70,8 +63,6 @@
 
 <!-- checkboxes and label element -->
       <p>Skills You're Looking For:</p>
-
-      <form id="myform">
         <input type="checkbox" id="web_dev" name="skills" value="Web Development">
         <label for="web_dev"> Web Development</label><br>
         <input type="checkbox" id="graphic_design" name="skills" value="Graphic Design">
@@ -87,6 +78,7 @@
           <input type="reset" value="Reset">
           <input type="submit" value="Submit"><br><br>
 </form>
+
 
 <script src="formStorage.js"></script>
 </body>

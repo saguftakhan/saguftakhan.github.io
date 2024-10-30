@@ -15,10 +15,14 @@ document.getElementById('myform').addEventListener('submit', function(event) {
         skills: Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(skill => skill.value)
     };
 
+    // Log form data to confirm it's correct
+    console.log("Collected Form Data:", formData);
+
     // Save form data to local storage as JSON string
     localStorage.setItem('formData', JSON.stringify(formData));
-    alert('Your data has been saved locally!');
+    console.log("Data saved to local storage");
 
-    // Clear the form after saving
+    // Alert user and reset the form
+    alert('Your data has been saved locally!');
     document.getElementById('myform').reset();
 });

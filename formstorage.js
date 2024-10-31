@@ -10,23 +10,13 @@ window.onload = function() {
     var contactText = document.getElementById("contact_text");
     var reason = document.getElementById("reason");
     var message = document.getElementById("message");
-    var industry = document.querySelector('input[list="industry"]');
-    var skills = document.querySelectorAll('input[name="skills"]:checked');
+    var industry = document.getElementById("industry"); 
+    var skills = document.querySelectorAll('input[name="skills"]:checked'); // Have to use querySelectorAll for this because getElementByID can't be used on groups of elements
 
     // Event listener to handle form submission
     document.getElementById('myform').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Collect and log form data
-        console.log(fname.value); // First name
-        console.log(lname.value); // Last name
-        console.log(email.value); // Email address
-        console.log(phone.value); // Phone number
-        console.log(company.value); // Company name
-        console.log(reason.value); // Reason for contact
-        console.log(message.value); // Message
-        console.log(industry.value); // Industry
-        console.log(contactEmail.checked ? "Email" : contactPhone.checked ? "Phone" : "Text"); // Preferred contact method
 
         // Save form data to local storage
         localStorage.setItem("firstName", fname.value);
@@ -43,10 +33,7 @@ window.onload = function() {
         let skillsArray = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(skill => skill.value);
         localStorage.setItem("skills", JSON.stringify(skillsArray));
 
-        alert("Your data has been saved locally!");
+        alert("Your form has been submitted!");
     });
-
-    // Retrieve and log stored data (for testing purposes)
-    console.log(localStorage.getItem("firstName")); // Check first name stored in local storage
-    console.log(localStorage.getItem("skills")); // Check skills stored in local storage as a JSON string
 };
+

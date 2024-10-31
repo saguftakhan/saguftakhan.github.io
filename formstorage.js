@@ -2,7 +2,7 @@
 
 window.onload = function() {
 
-    // Access form elements
+    // Get form fields by their ID's
     var fname = document.getElementById("fname");
     var lname = document.getElementById("lname");
     var email = document.getElementById("email");
@@ -16,11 +16,11 @@ window.onload = function() {
     var industry = document.getElementById("industry"); 
     var skills = document.querySelectorAll('input[name="skills"]:checked'); // Have to use querySelectorAll for this because getElementByID can't be used on groups of elements. 
 
-    // Event listener to handle form submission
+     // Event listener for form submission
     document.getElementById('myform').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Collect and log form data
+        // Log the form data to the console
         console.log(fname.value); // First name
         console.log(lname.value); // Last name
         console.log(email.value); // Email address
@@ -37,15 +37,17 @@ window.onload = function() {
         localStorage.setItem("email", email.value);
         localStorage.setItem("phone", phone.value);
         localStorage.setItem("company", company.value);
-        localStorage.setItem("contactMethod", contactEmail.checked ? "Email" : contactPhone.checked ? "Phone" : "Text");
+        localStorage.setItem("contactMethod", contactEmail.checked ? "Email" : contactPhone.checked ? "Phone" : "Text"); // Saves preferred contact method to local storage
         localStorage.setItem("reason", reason.value);
         localStorage.setItem("message", message.value);
         localStorage.setItem("industry", industry.value);
 
-        // Store skills as an array in local storage
+        // Convert selected skills to an array and store as JSON in local storage
         let skillsArray = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(skill => skill.value);
         localStorage.setItem("skills", JSON.stringify(skillsArray));
 
+
+        // Show an alert to let the visitor know the form was submitted
         alert("Your form has been submitted!");
     });
 

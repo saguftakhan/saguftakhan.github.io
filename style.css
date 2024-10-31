@@ -1,13 +1,16 @@
+/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* Reset some default styling */
 ul {
-    list-style: none;
-    background: none;
+    list-style: none; /* Remove bullets from list items */
+    background: none;  /* Remove default background color */
 }
+/* Style for menu items */
 ul li {
     display: inline-block;
     position: relative;
@@ -20,22 +23,26 @@ ul li a{
     text-align:center;
     font-size: 17pt;
 }
+/* Dropdown menu style */
 ul li ul.dropdown li {
-    display:block;
+    display:block; /* Display items vertically in the dropdown */
 }
 ul li ul.dropdown {
     width: 100%;
     background: none; 
     position:absolute;
-    z-index: 999;
-    display:none;
+    z-index: 999;   /* Ensures dropdown appears on top */
+    display:none;   /* Initially hides dropdown until hover */
+
 }
 ul li a:hover {
-    background: none;
+    background: none; /* Keeps background color same on hover */
 }
+/* Show dropdown menu on hover */
 ul li:hover ul.dropdown {
     display: block;
 }
+/* Navbar styling */
 .navbar-container {
     display: flex;           /* Aligns items in a row */
     align-items: center;      /* Vertically centers the items (logo and nav menu) */
@@ -43,11 +50,11 @@ ul li:hover ul.dropdown {
     padding: 10px 0;          /* Optional padding for spacing */
     width: 100%;              /* Ensures the container spans the full width */
 }
-
+/* Container styling */
 .container{
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stacks elements vertically */
     height: 100vh;
     width: 100%;
     background-image: url("background-image.jpg");
@@ -57,11 +64,11 @@ ul li:hover ul.dropdown {
     padding-right: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Includes padding within the element's width */
     position: relative;
 }
 
-
+/* Logo styling */
 .logo{
     width: 100px;
     cursor: pointer;  
@@ -85,7 +92,7 @@ ul li:hover ul.dropdown {
     margin-top: 10%;
 }
 .content .hire-me-button{
-    display: inline-block;
+    display: inline-block; /* Allows button to maintain inline layout */
     font-family: Arial, sans-serif;
     font-size: 20pt;
     position: center;

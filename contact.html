@@ -2,12 +2,13 @@
 <html>
 <body>
 <h1> Contact Me </h1>
-<!-- button -->
 
+<!-- Button that displays an alert when clicked -->
 <button type="button" onclick="alert('If you would like to get in touch, please fill out form below')">Get in Touch!</button><br><br>
 
-<!-- field set element, label, and legend element -->
+<!-- Form for collecting contact information -->
 <form id="myform">
+  <!-- field set element, label, and legend element -->
     <fieldset>
       <legend>Personal Details:</legend><br>
       <label for="fname">First name:</label><br>
@@ -26,7 +27,7 @@
   <label for="company">Enter Your Company name (or a '!'): </label>
   <input type="text" id="company" name="company"><br><br>
 
-<!-- radio button -->
+ <!-- Radio buttons for selecting preferred contact method -->
 <p>Preferred Contact Method:</p>
   <input type="radio" id="contact_email" name="contact_method" value="Email">
   <label for="contact_email">Email</label><br>
@@ -44,7 +45,7 @@
       <option value="questions">Question or Support</option>
     </select><br><br>
 
-<!-- text area -->
+<!-- Text area for entering a custom message -->
     <p>Your Message:</p>
   <textarea name="message" id="message" rows="10" cols="30">Enter your message here...</textarea> <br> <br> 
 
@@ -71,9 +72,9 @@
         <label for="project_management"> Project Management</label><br><br>
 
           <br><br>
-                 
-          <input type="reset" value="Reset">
-          <input type="submit" value="Submit"><br><br>
+
+          <input type="reset" value="Reset"> <!-- Resets all form fields to their initial values -->
+          <input type="submit" value="Submit"><br><br> <!-- Submits the form data -->
 </form>
 
 <script src="formstorage.js"></script>

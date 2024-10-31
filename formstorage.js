@@ -1,4 +1,7 @@
+// JavaScript Document
+
 window.onload = function() {
+
     // Access form elements
     var fname = document.getElementById("fname");
     var lname = document.getElementById("lname");
@@ -11,12 +14,22 @@ window.onload = function() {
     var reason = document.getElementById("reason");
     var message = document.getElementById("message");
     var industry = document.getElementById("industry"); 
-    var skills = document.querySelectorAll('input[name="skills"]:checked'); // Have to use querySelectorAll for this because getElementByID can't be used on groups of elements
+    var skills = document.querySelectorAll('input[name="skills"]:checked'); // Have to use querySelectorAll for this because getElementByID can't be used on groups of elements. 
 
     // Event listener to handle form submission
     document.getElementById('myform').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
+        // Collect and log form data
+        console.log(fname.value); // First name
+        console.log(lname.value); // Last name
+        console.log(email.value); // Email address
+        console.log(phone.value); // Phone number
+        console.log(company.value); // Company name
+        console.log(reason.value); // Reason for contact
+        console.log(message.value); // Message
+        console.log(industry.value); // Industry
+        console.log(contactEmail.checked ? "Email" : contactPhone.checked ? "Phone" : "Text"); // Preferred contact method
 
         // Save form data to local storage
         localStorage.setItem("firstName", fname.value);
@@ -35,5 +48,6 @@ window.onload = function() {
 
         alert("Your form has been submitted!");
     });
+
+
 };
- 

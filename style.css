@@ -142,3 +142,70 @@ ul li:hover ul.dropdown {
     background-color: #2196F3;
     color: white;
 }
+/* Images section styling */
+.images-section figure {
+    margin: 20px;
+    text-align: center;
+}
+
+.images-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.images-section figcaption {
+    margin-top: 10px;
+    font-size: 14pt;
+    color: #555;
+}
+
+.alt-text {
+    margin-top: 5px;
+    font-size: 12pt;
+    color: #888; /* Light gray color for alt text */
+}
+
+.images-section button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #FFBF00;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* Accessibility buttons styling */
+.accessibility-buttons {
+    margin-top: 20px;
+}
+
+.accessibility-buttons button,
+.alt-text-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#increase-text-size {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#change-theme {
+    background-color: #2196F3;
+    color: white;
+}
+
+.alt-text-buttons button {
+    background-color: #FFBF00;
+    color: black;
+}
